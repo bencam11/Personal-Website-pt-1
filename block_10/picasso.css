@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    height: 100%;}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;}
+.sidebar-1, .sidebar-2, .sidebar-3 {
+    flex: calc(100% / 3 - 10px);
+    background-color: turquoise;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index: 1;}
+.sidebar-4 {
+    flex: 100%;
+    background-color: turquoise;
+    margin-bottom: 10px;
+    z-index: 2;}
+.footer {
+    flex: 100;
+    background-color: lightgreen;
+    height: 5% }
+@media screen and (min-width: 390px) {
+    .container {
+        flex-direction: column;
+    }}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }}
+@media screen and (min-width: 1020px) {
+    .container {
+        flex-direction: column; }}
