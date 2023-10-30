@@ -3,3 +3,32 @@
 #about-nav a { color: red;}
 
 #contact-nav a { color: green;}
+html, body {
+    margin: 0;
+    height: 100%;}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;}
+
+.sidebar-2, .sidebar-3 {
+    flex: calc(100% / 2 - 10px);
+    background-color: gray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index: 1;}
+.sidebar-1 {
+        flex: 100%;
+        background-color: gray;
+        margin-bottom: 10px;
+        z-index: 2;}
+.box1 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            z-index: 2;
+            position: relative;
+            left: 200px;
+            bottom: 50px;
+            text-decoration: underline ; text-align: center ; color : white ;
+        }
